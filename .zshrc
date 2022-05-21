@@ -133,3 +133,4 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export VIRTUALENVWRAPPER_VIRTUALENV=$HOME/.local/bin/virtualenv
 source $HOME/.local/bin/virtualenvwrapper.sh
 alias config='/usr/bin/git --git-dir=/home/ffqi/.cfg/ --work-tree=/home/ffqi'
+alias lg_cfg='lazygit --git-dir=/home/ffqi/.cfg/ --work-tree=/home/ffqi'
