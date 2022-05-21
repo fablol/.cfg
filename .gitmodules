@@ -1,0 +1,6 @@
+[submodule ".config/neofetch/ascii-art-neofetch"]
+	path = .config/neofetch/ascii-art-neofetch
+	url = git@github.com:fablol/ascii-art-neofetch.git
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = git@github.com:fablol/nvim_config.git
