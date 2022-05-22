@@ -104,7 +104,7 @@ config checkout
 同样把 status.showUntrackedFiles 关闭：
 
 ```
-config config — local status.showUntrackedFiles no
+config config --local status.showUntrackedFiles no
 ```
 
 大功告成，现在你可以像之前一样管理配置文件了，就像这样：
