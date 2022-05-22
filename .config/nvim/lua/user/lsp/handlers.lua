@@ -15,7 +15,7 @@ M.setup = function()
 
   local config = {
     -- disable virtual text
-    virtual_text = false,
+    virtual_text = true,
     -- show signs
     signs = {
       active = signs,
@@ -28,8 +28,8 @@ M.setup = function()
       style = "minimal",
       border = "rounded",
       source = "always",
-      header = "",
-      prefix = "",
+      header = "always",
+      prefix = "always",
     },
   }
 
