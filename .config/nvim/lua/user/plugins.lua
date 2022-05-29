@@ -96,13 +96,14 @@ return packer.startup(function(use)
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
-
+  use "nvim-telescope/telescope-media-files.nvim"
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
   use "JoosepAlviste/nvim-ts-context-commentstring"
+  use "p00f/nvim-ts-rainbow"
 
   -- Git
   use "lewis6991/gitsigns.nvim"
