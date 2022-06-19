@@ -6,6 +6,8 @@
 
 ```
 sudo pacman -S --needed git zsh neovim ranger ripgrep fzf neofetch python python-pip
+```
+```
 sudo pacman -S --needed alacritty kitty
 ```
 
@@ -30,7 +32,10 @@ checkout 云端的配置文件到你的 $HOME 目录下：
 ```
 config checkout
 ```
-
+把 status.showUntrackedFiles 关闭：
+```
+config config --local status.showUntrackedFiles no
+```
 ```
 source ~/.zshrc
 ```
