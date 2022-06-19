@@ -52,4 +52,7 @@ git clone https://github.com/zsh-users/zsh-completions $ZSH_CUSTOM/plugins/zsh-c
 ```
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
-
+安装yay
+```
+pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+```
