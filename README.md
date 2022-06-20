@@ -5,7 +5,7 @@
 如果你已经在云端仓库保存了你的配置文件，你可以按照下面的步骤取回来：
 
 ```
-sudo pacman -S --needed git zsh neovim ranger ripgrep fzf neofetch python python-pip
+sudo pacman -S --needed git lazygit zsh neovim ranger ripgrep fzf neofetch python python-pip xsel npm
 ```
 ```
 sudo pacman -S --needed alacritty kitty
@@ -55,4 +55,20 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 安装yay
 ```
 pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+```
+python支持
+```
+pip install pynvim black
+```
+npm
+```
+sudo npm i -g neovim
+sudo npm i -g prettier
+```
+rust
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+```
+cargo install stylua
 ```
