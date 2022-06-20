@@ -5,7 +5,7 @@
 如果你已经在云端仓库保存了你的配置文件，你可以按照下面的步骤取回来：
 
 ```
-sudo pacman -S --needed git lazygit zsh neovim ranger ripgrep fzf neofetch python python-pip xsel npm
+sudo pacman -S --needed git lazygit zsh clang cmake llvm unzip neovim ranger ripgrep fzf neofetch python python-pip xsel npm
 ```
 ```
 sudo pacman -S --needed alacritty kitty
