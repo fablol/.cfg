@@ -122,7 +122,7 @@ export LESS='-R --use-color -Dd+r$Du+b'
 
 autoload -U compinit && compinit
 
-export PATH=$PATH:/home/ffqi/.cargo/bin
+export PATH=$PATH:$HOME/.cargo/bin
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -139,3 +139,7 @@ alias lg_cfg='lazygit --git-dir=/home/ffqi/.cfg/ --work-tree=/home/ffqi'
 
 # ranger
 # export RANGER_LOAD_DEFAULT_RC=FALSE
+
+# ruby
+export PATH=$PATH:$HOME/.rbenv/bin
+
