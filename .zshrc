@@ -122,6 +122,7 @@ export LESS='-R --use-color -Dd+r$Du+b'
 
 autoload -U compinit && compinit
 
+# rust
 export PATH=$PATH:$HOME/.cargo/bin
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -133,6 +134,9 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export VIRTUALENVWRAPPER_VIRTUALENV=$HOME/.local/bin/virtualenv
 source $HOME/.local/bin/virtualenvwrapper.sh
 
+# goproxy
+export GOPROXY=https://proxy.golang.com.cn,direct
+
 # config
 alias config='/usr/bin/git --git-dir=/home/ffqi/.cfg/ --work-tree=/home/ffqi'
 alias lg_cfg='lazygit --git-dir=/home/ffqi/.cfg/ --work-tree=/home/ffqi'
@@ -140,6 +144,12 @@ alias lg_cfg='lazygit --git-dir=/home/ffqi/.cfg/ --work-tree=/home/ffqi'
 # ranger
 # export RANGER_LOAD_DEFAULT_RC=FALSE
 
+<<<<<<< HEAD
 # ruby
 export PATH=$PATH:$HOME/.rbenv/bin
+=======
+# black
+export PATH=$PATH:/home/ffqi/.local/bin
+
+>>>>>>> 6fdf993b8f0c4256756c6871298a97bbaa932fa0
 

@@ -8,3 +8,4 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 alias config='/usr/bin/git --git-dir=/home/ffqi/.cfg/ --work-tree=/home/ffqi'
+. "$HOME/.cargo/env"
