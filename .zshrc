@@ -144,12 +144,10 @@ alias lg_cfg='lazygit --git-dir=/home/ffqi/.cfg/ --work-tree=/home/ffqi'
 # ranger
 # export RANGER_LOAD_DEFAULT_RC=FALSE
 
-<<<<<<< HEAD
 # ruby
 export PATH=$PATH:$HOME/.rbenv/bin
-=======
-# black
-export PATH=$PATH:/home/ffqi/.local/bin
 
->>>>>>> 6fdf993b8f0c4256756c6871298a97bbaa932fa0
+# black
+export PATH=$PATH:$HOME/.local/bin
+
 
