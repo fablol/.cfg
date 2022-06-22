@@ -5,12 +5,18 @@
 如果你已经在云端仓库保存了你的配置文件，你可以按照下面的步骤取回来：
 
 ```
-sudo pacman -S --needed git lazygit zsh clang cmake llvm unzip neovim ranger ripgrep fzf neofetch python python-pip xsel npm
+sudo pacman -S --needed git lazygit zsh clang cmake llvm unzip neovim ranger ripgrep fzf neofetch python xsel npm
 ```
 ```
 sudo pacman -S --needed alacritty kitty
 ```
+```
+wget https://bootstrap.pypa.io/get-pip.py
+python get-pip.py
 
+python -m pip install --upgrade pip
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+```
 安装python virtualenv
 ```
 pip install virtualenv virtualenvwrapper -i https://pypi.tuna.tsinghua.edu.cn/simple
