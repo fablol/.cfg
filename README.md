@@ -18,7 +18,7 @@ pip install virtualenv virtualenvwrapper -i https://pypi.tuna.tsinghua.edu.cn/si
 把仓库里的内容下载下来：
 
 ```
-git clone --bare https://github.com/fablol/.cfg.git $HOME/.cfg
+git clone --bare git@github.com:fablol/.cfg.git $HOME/.cfg
 ```
 
 设置 alias：
