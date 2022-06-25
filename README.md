@@ -11,7 +11,7 @@ sudo pacman -S --needed git lazygit zsh clang cmake llvm unzip neovim ranger rip
 sudo pacman -S --needed alacritty kitty
 ```
 ```
-curl -o- wget https://bootstrap.pypa.io/get-pip.py | python
+curl -o- https://bootstrap.pypa.io/get-pip.py | python
 ```
 ```
 python -m pip install --upgrade pip
