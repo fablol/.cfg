@@ -81,7 +81,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo z kubectl history emoji encode64 web-search copypath copyfile copybuffer dirhistory jsontools zsh-syntax-highlighting zsh-autosuggestions zsh-completions)
+plugins=(git sudo z kubectl history emoji encode64 web-search copypath copyfile copybuffer dirhistory jsontools zsh-syntax-highlighting zsh-autosuggestions zsh-completions zsh-proxy)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -116,6 +116,7 @@ alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias lg='lazygit'
 alias ra='ranger'
+alias pc='proxychains -q'
 
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
 export LESS='-R --use-color -Dd+r$Du+b'
