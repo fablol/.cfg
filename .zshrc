@@ -81,7 +81,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo z kubectl history emoji encode64 web-search copypath copyfile copybuffer dirhistory jsontools zsh-syntax-highlighting zsh-autosuggestions zsh-completions zsh-proxy)
+plugins=(git sudo z kubectl history emoji encode64 web-search copypath copyfile copybuffer dirhistory jsontools zsh-syntax-highlighting zsh-autosuggestions zsh-completions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -139,8 +139,8 @@ source $HOME/.local/bin/virtualenvwrapper.sh
 export GOPROXY=https://proxy.golang.com.cn,direct
 
 # config
-alias config='/usr/bin/git --git-dir=/home/ffqi/.cfg/ --work-tree=/home/ffqi'
-alias lg_cfg='lazygit --git-dir=/home/ffqi/.cfg/ --work-tree=/home/ffqi'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias lg_cfg='lazygit --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # ranger
 # export RANGER_LOAD_DEFAULT_RC=FALSE
