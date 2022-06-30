@@ -133,7 +133,7 @@ export PATH=$PATH:$HOME/.cargo/bin
 export WORKON_HOME=$HOME/.local/bin/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export VIRTUALENVWRAPPER_VIRTUALENV=$HOME/.local/bin/virtualenv
-source /usr/bin/virtualenvwrapper.sh
+source $HOME/.local/bin/virtualenvwrapper.sh
 
 # goproxy
 export GOPROXY=https://proxy.golang.com.cn,direct
