@@ -84,14 +84,51 @@ local function lsp_keymaps(bufnr)
 	vim.cmd([[ command! Format execute 'lua vim.lsp.buf.formatting()' ]])
 end
 
+local lsp_formatting = function(bufnr)
+	vim.lsp.buf.format({
+		filter = function(client)
+			-- apply whatever logic you want (in this example, we'll only use null-ls)
+			return client.name == "null-ls"
+		end,
+		bufnr = bufnr,
+	})
+end
+
+-- if you want to set up formatting on save, you can use this as a callback
+local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+
 M.on_attach = function(client, bufnr)
-	if client.name == "tsserver" then
-		client.resolved_capabilities.document_formatting = false
-	end
-	-- if client.name == "sumneko_lua" then
-	--  client.resolved_capabilities.document_formatting = false
-	--  client.resolved_capabilities.document_range_formatting = false
+	-- if client.name == "tsserver" then
+	-- 	client.resolved_capabilities.document_formatting = false
 	-- end
+	-- if client.name == "clangd" then
+	-- 	client.resolved_capabilities.document_formatting = false
+	-- 	client.resolved_capabilities.document_range_formatting = false
+	-- end
+	-- if client.name == "ccls" then
+	-- 	client.resolved_capabilities.document_formatting = false
+	-- 	client.resolved_capabilities.document_range_formatting = false
+	-- end
+	-- if client.name == "sumneko_lua" then
+	-- 	client.resolved_capabilities.document_formatting = false
+	-- 	client.resolved_capabilities.document_range_formatting = false
+	-- end
+
+	if client.name ~= "null_ls" then
+		client.resolved_capabilities.document_formatting = false
+		client.resolved_capabilities.document_range_formatting = false
+	end
+	-- add to your shared on_attach callback
+	if client.supports_method("textDocument/formatting") then
+		vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
+		vim.api.nvim_create_autocmd("BufWritePre", {
+			group = augroup,
+			buffer = bufnr,
+			callback = function()
+				lsp_formatting(bufnr)
+			end,
+		})
+	end
 	lsp_keymaps(bufnr)
 	lsp_highlight_document(client)
 end
